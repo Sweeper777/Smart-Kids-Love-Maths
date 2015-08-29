@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="button_color">#2d9eda</color>
+    <color name="button_pressed_color">#2b76a9</color>
+    <color name="activity_background">#ffc009</color>
+</resources>

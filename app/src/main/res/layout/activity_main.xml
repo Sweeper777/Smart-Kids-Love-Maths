@@ -1,0 +1,147 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                tools:context=".MainActivity"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+              android:background="@drawable/a">
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:id="@+id/customize_menu"
+        android:layout_weight="9">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/digit_text"
+                android:textSize="@dimen/customize_menu_title"
+                android:layout_marginTop="@dimen/item_spacing"/>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textSize="@dimen/customize_menu_radio"
+                    android:layout_marginLeft="@dimen/radio_button_spacing"
+                    android:id="@+id/rb1_number_of_digits"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2"
+                    android:textSize="@dimen/customize_menu_radio"
+                    android:layout_marginLeft="@dimen/radio_button_spacing"
+                    android:checked="true"
+                    android:id="@+id/rb2_number_of_digits"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3"
+                    android:textSize="@dimen/customize_menu_radio"
+                    android:layout_marginLeft="@dimen/radio_button_spacing"
+                    android:id="@+id/rb3_number_of_digits"/>
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/operator_text"
+                android:textSize="@dimen/customize_menu_title"
+                android:layout_marginTop="@dimen/item_spacing"/>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+"
+                    android:textSize="@dimen/customize_menu_radio"
+                    android:layout_marginLeft="@dimen/radio_button_spacing"
+                    android:id="@+id/rb1_operator"
+                    android:checked="true"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textSize="@dimen/customize_menu_radio"
+                    android:layout_marginLeft="@dimen/radio_button_spacing"
+                    android:id="@+id/rb2_operator"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+/-"
+                    android:textSize="@dimen/customize_menu_radio"
+                    android:layout_marginLeft="@dimen/radio_button_spacing"
+                    android:id="@+id/rb3_operator"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="x"
+                    android:textSize="@dimen/customize_menu_radio"
+                    android:layout_marginLeft="@dimen/radio_button_spacing"
+                    android:id="@+id/rb4_operator"/>
+
+            </RadioGroup>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/timer_enabled_text"
+                android:textSize="@dimen/customize_menu_title"
+                android:layout_marginTop="@dimen/item_spacing"
+                android:id="@+id/cb_timer_enabled"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="2">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/button_start"
+            android:id="@+id/btn_start"
+            android:layout_margin="@dimen/question_display_margin"
+            android:background="@drawable/button_pressed_color"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/btn_trophy"
+            android:text="@string/button_trophies"
+            android:layout_margin="@dimen/question_display_margin"
+            android:background="@drawable/button_pressed_color"/>
+    </LinearLayout>
+
+</LinearLayout>

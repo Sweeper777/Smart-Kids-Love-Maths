@@ -1,0 +1,18 @@
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="question_margin">25dp</dimen>
+
+    <dimen name="customize_menu_title">15pt</dimen>
+    <dimen name="customize_menu_radio">13pt</dimen>
+    <dimen name="question_text_size">20pt</dimen>
+    <dimen name="answer_text_size">12pt</dimen>
+
+    <dimen name="radio_button_spacing">20dp</dimen>
+    <dimen name="item_spacing">20dp</dimen>
+
+    <dimen name="score_label_size">20pt</dimen>
+    <dimen name="score_size">40pt</dimen>
+    <dimen name="question_display_margin">4dp</dimen>
+    <dimen name="prize_display_margin">32dp</dimen>
+</resources>
